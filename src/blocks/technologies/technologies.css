@@ -1,0 +1,23 @@
+@import url('./__container/technologies__container.css');
+@import url('./__title/technologies__title.css');
+
+.technologies {		
+    display: flex;
+    justify-content: space-between;
+    background: #f5f6f7;
+    font-family: Roboto, Roboto Slab, Inter, sans-serif;
+}
+
+@media screen and (max-width: 1200px) {
+    .technologies {
+        flex-direction: column;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .technologies {
+        flex-direction: column;
+        margin-right: 0;
+    }
+}

@@ -1,0 +1,12 @@
+@import url('./_active/breadcrumbs__item_active.css');
+
+.breadcrumbs__item {
+    text-decoration: none;
+    color: #B6BCBF;
+    cursor: text;
+    margin-right: 4px;
+}
+
+.breadcrumbs__item:last-child {
+    margin-right: 0;
+}

@@ -1,0 +1,19 @@
+@import url('./_section/button_section_search-form.css');
+@import url('./_section/button_section_news.css');
+@import url('./_section/button_section_commits.css');
+
+.button {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  font-family: 'Roboto', 'Roboto Slab', 'Inter' sans-serif;
+  cursor: pointer;
+  min-height: 64px;
+  border-radius: 80px;  
+}
+
+@media screen and (max-width: 1024px) {
+  .button {
+    min-height: 58px;
+  }
+}

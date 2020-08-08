@@ -1,0 +1,9 @@
+.breadcrumbs__container {
+    padding: 0;
+    list-style-type: none;    
+    display: flex;
+    color: #b6bcbf;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0
+}

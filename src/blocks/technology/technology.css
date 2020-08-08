@@ -1,0 +1,19 @@
+@import url('./__title/technology__title.css');
+@import url('./__image/technology__image.css');
+
+.technology {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.technology:last-child {
+    margin-right: 0;
+}
+
+@media screen and (max-width: 650px) {
+    .technology:last-child {
+        margin-right: 40px;
+    }
+}

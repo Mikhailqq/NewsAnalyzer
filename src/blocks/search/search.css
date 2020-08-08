@@ -1,0 +1,9 @@
+@import url('./__container/search__container.css');
+@import url('./__title/search__title.css');
+@import url('./__subtitle/search__subtitle.css');
+
+
+.search {
+    color: #ffff;
+    font-family: 'Roboto Slab', 'Roboto', 'Inter', sans-serif;
+}

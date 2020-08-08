@@ -1,0 +1,10 @@
+@import url('./__container/breadcrumbs__container.css');
+@import url('./__item/breadcrumbs__item.css');
+
+.breadcrumbs {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-bottom: 0;
+    padding-top: 39px;
+    font-family: Roboto, Roboto Slab, Inter, sans-serif;
+}

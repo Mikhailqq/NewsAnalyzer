@@ -1,0 +1,11 @@
+@import url('./__item/menu__item.css');
+@import url('./_theme/menu_theme_white.css');
+@import url('./_theme/menu_theme_black.css');
+
+.menu {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;    
+}

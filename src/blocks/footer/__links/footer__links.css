@@ -1,0 +1,31 @@
+.footer__links {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    order: 1;
+    color: inherit;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 24px;
+    margin-right: 40px;
+}
+
+.footer__links:last-child {
+    margin-right: 0;
+}
+
+@media screen and (max-width: 730px) {
+    .footer__links {
+        margin: 20px 0 40px;
+        padding-right: 10px;
+        order: 0;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .footer__links {
+        flex-direction: column;
+        margin: 20px 0 40px;
+    }
+}

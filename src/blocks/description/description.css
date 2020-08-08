@@ -1,0 +1,7 @@
+@import url('./__title/description__title.css');
+@import url('./__paragraph/description__paragraph.css');
+
+.description {
+    margin: 0 auto;
+    font-family: Roboto, Roboto Slab, Inter, sans-serif;
+}

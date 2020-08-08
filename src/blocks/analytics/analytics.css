@@ -1,0 +1,14 @@
+@import url('./__title/analytics__title.css');
+@import url('./__container/analytics__container.css');
+@import url('./__shedule/analytics__shedule.css');
+@import url('./__charts/analytics__charts.css');
+@import url('./__date/analytics__date.css');
+@import url('./__percent/analytics__percent.css');
+@import url('./__digit/analytics__digit.css');
+@import url('./__digits/analytics__digits.css');
+
+
+.analytics {
+    font-family: Roboto, Roboto Slab, Inter, sans-serif;
+    background: #f5f6f7;
+}

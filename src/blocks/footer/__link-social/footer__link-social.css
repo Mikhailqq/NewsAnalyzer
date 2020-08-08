@@ -1,0 +1,18 @@
+@import url('./_facebook/footer__link-social_facebook.css');
+@import url('./_github/footer__link-social_github.css');
+
+.footer__link-social {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 730px) {
+    .footer__link-social {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 24px;
+        margin-right: 20px;
+    }
+}

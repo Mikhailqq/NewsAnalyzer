@@ -1,0 +1,36 @@
+.about-author__avatar-container {
+    width: 38%;
+    padding-bottom: 38%;
+    align-self: center;
+    height: fit-content;
+    position: relative;
+    flex-shrink: 0;
+}
+
+@media screen and (max-width: 800px) {
+    .about-author__avatar-container {
+        width: 34%;
+        padding-bottom: 34%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about-author__avatar-container {
+        width: 50%;
+        padding-bottom: 50%;
+    }
+}
+
+@media screen and (max-width: 485px) {
+    .about-author__avatar-container {
+        width: 74%;
+        padding-bottom: 74%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .about-author__avatar-container {
+        width: 95%;
+        padding-bottom: 95%;
+    }
+}

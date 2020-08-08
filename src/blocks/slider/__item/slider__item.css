@@ -1,0 +1,22 @@
+.slider__item {
+    margin-right: 16px;
+    flex: none;
+    max-width: 400px;    
+}
+
+.slider__item:last-of-type {
+    margin-right: 0;
+}
+
+@media screen and (max-width: 1250px) {
+    .slider__item {
+        width: calc((100% - 16px) / 2);
+        margin-right: 8px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .slider__item {
+        width: 100%;
+    }
+}

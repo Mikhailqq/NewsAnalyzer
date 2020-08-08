@@ -1,0 +1,27 @@
+.technologies__container {
+    display: flex;
+    margin-right: 100px;
+}
+
+@media screen and (max-width: 1200px) {
+    .technologies__container {
+        justify-content: space-around;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .technologies__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 39px 0 12px;
+        row-gap: 15px;
+        align-self: stretch;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .technologies__container {       
+        align-self: center;
+    }
+}
