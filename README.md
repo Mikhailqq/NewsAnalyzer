@@ -1,7 +1,7 @@
 # NewsAnalyzer
 
 ## Ссылка:
- https://mikhailqq.github.io/Mesto/Mesto
+https://mikhailqq.github.io/NewsAnalyzer/
 
 ---
 ## v.0.0.1
