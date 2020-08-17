@@ -1,0 +1,16 @@
+@import url('./_place/commits__slider-arrow_place_right.css');
+@import url('./_place/commits__slider-arrow_place_left.css');
+
+.commits__slider-arrow {
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media screen and (max-width: 1250px) {
+    .commits__slider-arrow {
+        display: none;
+    }
+}

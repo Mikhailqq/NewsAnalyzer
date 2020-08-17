@@ -1,0 +1,18 @@
+.footer__copyright {
+    font-size: 16px;
+    line-height: 22px;
+    color: #b6bcbf;
+    order: 1;
+}
+
+@media screen and (max-width: 840px) {
+    .footer__copyright {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .footer__copyright {        
+        margin-right: 20px;
+    }
+}

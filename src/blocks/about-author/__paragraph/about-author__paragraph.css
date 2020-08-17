@@ -1,0 +1,15 @@
+.about-author__paragraph {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 0 24px;
+}
+
+.about-author__paragraph:last-of-type {
+    margin: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .about-author__paragraph {
+        margin: 0;
+    }
+}

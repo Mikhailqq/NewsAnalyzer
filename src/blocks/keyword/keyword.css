@@ -1,0 +1,16 @@
+@import url('./__title/keyword__title.css');
+@import url('./__paragraph/keyword__paragraph.css');
+@import url('./__number/keyword__number.css');
+@import url('./__reference/keyword__reference.css');
+
+.keyword {
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: 'Roboto', 'Roboto Slab', 'Inter', sans-serif;
+}
+
+@media screen and (max-width: 485px) {
+    .keyword {
+        padding-top: 18px;
+    }
+}

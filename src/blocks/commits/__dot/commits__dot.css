@@ -1,0 +1,14 @@
+@import url('./_active/commits__dot_active.css');
+
+.commits__dot {
+    display: block;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    margin-right: 8px;
+    background: #d1d2d6
+}
+
+.commits__dot:last-child {
+	margin-right: 0;
+}

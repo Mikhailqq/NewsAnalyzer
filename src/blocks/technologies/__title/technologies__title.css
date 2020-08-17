@@ -1,0 +1,31 @@
+.technologies__title {
+    font-size: 40px;
+    line-height: 46px;
+    font-family: Roboto Slab, Roboto, Inter, sans-serif;
+    width: 40%;
+    margin: 5px 0 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .technologies__title {
+        width: fit-content;
+        max-width: 45%;
+        font-size: 30px;
+        line-height: 34px;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .technologies__title {
+        font-size: 30px;
+        line-height: 34px;
+    }
+}
+
+@media screen and (max-width: 485px) {
+    .technologies__title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}

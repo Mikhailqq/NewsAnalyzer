@@ -1,0 +1,10 @@
+@import url('./__section/page__section.css');
+
+.page {
+    color: #1A1B22;
+    box-sizing: border-box;
+    min-width: 320px;
+    font-family: 'Roboto', 'Roboto Slab', 'Inter', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}

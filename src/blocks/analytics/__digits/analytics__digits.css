@@ -1,0 +1,15 @@
+@import url('./_section/analytics__digits_section_top.css');
+@import url('./_section/analytics__digits_section_bottom.css');
+
+.analytics__digits {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+}
+
+@media screen and (max-width: 485px) {
+    .analytics__digits {
+        display: none;
+    }
+}

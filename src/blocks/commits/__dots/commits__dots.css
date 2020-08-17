@@ -1,0 +1,5 @@
+.commits__dots {
+    margin: 48px auto 0;
+    display: flex;
+    justify-content: center
+}
