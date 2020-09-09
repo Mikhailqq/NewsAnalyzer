@@ -1,4 +1,7 @@
 .slider-card__avatar {
     height: 100%;
     margin-right: 16px;
+    width: 100%;    
+    max-width: 62px;
+    border-radius: 50%
 }

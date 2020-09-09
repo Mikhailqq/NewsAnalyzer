@@ -2,11 +2,12 @@
 @import url('./__item-container/slider__item-container.css');
 
 .slider {
-	display: flex;  
-  overflow: hidden;  
+	display: flex;    
   position: relative;
   max-height: 288px;
   list-style-type: none;
+  padding: 0 104px;
+
 }
 
 /*.slider:before {
@@ -29,7 +30,7 @@
   height: 100%;
   background: linear-gradient(90deg, rgba(245, 246, 247, 0) 0%, #F5F6F7 100%);
   z-index: 1;
-}
+}*/
 
 @media screen and (max-width: 1250px) {
   .slider {
@@ -56,4 +57,4 @@
   .slider {
     padding: 0 16px;
   }
-}*/
+}
