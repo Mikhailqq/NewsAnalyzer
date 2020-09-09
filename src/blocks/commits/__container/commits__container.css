@@ -13,5 +13,7 @@
 }
 
 @media screen and (max-width: 680px) {
-    .commits__container {}
+    .commits__container {
+    	padding-left: 0;
+    }
 }

@@ -2,14 +2,14 @@ export const SWIPER_CONFIG = {
   direction: 'horizontal',
   loop: false,
   pagination: {
-    el: '.',
+    el: '',
     clickable: true,
     bulletClass: '',
     bulletActiveClass: '',
   },
   navigation: {
-    nextEl: '.',
-    prevEl: '.c',
+    nextEl: 'commits__slider-arrow_place_right',
+    prevEl: 'commits__slider-arrow_place_left',
   },
   breakpoints: {
     680: {
@@ -23,6 +23,6 @@ export const SWIPER_CONFIG = {
   },
   slidesPerView: 1,
   spaceBetween: 8,
-  slideClass: '',
-  wrapperClass: '',
+  slideClass: 'slider__item',
+  wrapperClass: 'commits__slider-wrapper',
 }
