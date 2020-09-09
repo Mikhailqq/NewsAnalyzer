@@ -6,9 +6,10 @@
   overflow: hidden;  
   position: relative;
   max-height: 288px;
+  list-style-type: none;
 }
 
-.slider:before {
+/*.slider:before {
   content: '';
   position: absolute;
   top: 0;
@@ -55,4 +56,4 @@
   .slider {
     padding: 0 16px;
   }
-}
+}*/

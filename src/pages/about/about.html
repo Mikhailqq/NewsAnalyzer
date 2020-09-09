@@ -77,12 +77,10 @@
             <a href="https://github.com/Mikhailqq" class="link link_place_commits" target="_blank">Открыть в Github &gt;</a>
         </div>
         <div class="commits__slider-wrapper">
-            <img src="<%=require('../../images/arrow-left.svg').default%>" class="commits__slider-arrow commits__slider-arrow_place_left" alt="Стрелка влево">
-            <img src="<%=require('../../images/arrow-right.svg').default%>" class="commits__slider-arrow commits__slider-arrow_place_right" alt="Стрелка вправо">
-            <div class="slider">
-
+            <ul class="slider">
+                
                 <template id="commit-card" style="display: none;">
-                    <div class="slider__item">
+                    <li class="slider__item">
                         <div class="slider__item-container">
                             <a class="slider-card" href="" target="_blank">
                                 <p class="slider-card__date"></p>
@@ -96,16 +94,13 @@
                                 <p class="slider-card__paragraph"></p>
                             </a>
                         </div>
-                    </div>
+                    </li>
                 </template>
-                
-            </div>
+            </ul>
+            <div class="commits__dots"></div>
+            <img src="<%=require('../../images/arrow-left.svg').default%>" class="commits__slider-arrow commits__slider-arrow_place_left" alt="Стрелка влево">
+            <img src="<%=require('../../images/arrow-right.svg').default%>" class="commits__slider-arrow commits__slider-arrow_place_right" alt="Стрелка вправо">
         </div>
-        <div class="commits__dots">
-            <!-- <div class="commits__dot"></div>
-            <div class="commits__dot commits__dot_active"></div>
-            <div class="commits__dot"></div> -->
-        </div>        
     </section>
     <footer class="footer page__section">
         <div class="footer__copyright">&copy; 2020 Mikhail Kukushkin</div>

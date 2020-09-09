@@ -15,12 +15,12 @@ import './style.css';
 const page = document.querySelector('.news__cards')
 
 
-const newsCardsList = new NewsCardList();
-NewsCardList.render(page);
+// const newsCardsList = new NewsCardList();
+// NewsCardList.render(page);
 
 
 
-console.log(newsCardsList)
+// console.log(newsCardsList)
 
 
 
