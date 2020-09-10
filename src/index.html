@@ -25,17 +25,19 @@
             <div class="search__container">
                 <h1 class="search__title">Что в мире творится?</h1>
                 <p class="search__subtitle">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.</p>
-                <form class="search-form">
-                    <input type="text" class="search-form__input" placeholder="Введите тему новости" required="" minlength="2" maxlength="50">
+                <form class="search-form" name="search">
+                    <input type="text" class="search-form__input" placeholder="Введите тему новости" required="" minlength="2" maxlength="50" novalidate>
                     <span class='search-form__error'></span>
-                    <button class="button button_section_search-form">Искать</button>
+                    <button class="button button_section_search-form" disabled>Искать</button>
                 </form>
             </div>
         </section>
     </div>
-    <section class="preloader page__section close">
-        <div class="preloader__container preloader__container_ellips ">
-            <div class="preloader__ellips"></div>
+    <section class="preloader page__section">
+        <div class="preloader__container">
+            <div class="preloader__ellips">
+                <i class='preloader__circle'></i>
+            </div>
             <p class="preloader__paragraph">Идет поиск новостей...</p>
         </div>
         <div class="preloader__container">
