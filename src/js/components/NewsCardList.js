@@ -1,69 +1,66 @@
 class NewsCardList {
-
-    constuctor(newsCardsHub, newsCardsSection, paginationButton) {
-        this._newsCardsSection = newsCardsSection;
-        this._newsCardsHub = newsCardsHub;
+    constructor(newsSection, newsCardsContainer, paginationButton) {
+        this._newsSection = newsSection;
+        this._newsCardsContainer = newsCardsContainer;
         this._paginationButton = paginationButton;
-        this._fullNewsCards = null;
+        this._newCardNews = null;
         this._setHandlers();
+    }
+
+    _setNewCardArray = (newCardNews) => {
+        this._newCardNews = newCardNews;
+    }
+
+    toggleNewsSection = (state) => {
+        if (state) {
+            this._newsSection.classList.add('news_visible')
+        } else {
+            this._newsSection.classList.remove('news_visible');
+        }
+    }
+
+    _pagination = () => {
+        const addNewCards = [];
+        for (let i = 0; i < 3; i++) {
+            addNewCards.push(this._newCardNews.pop())
+        }
+        this._render(addNewCards);
+        if (this._newCardNews.length === 0) {
+            this._togglePaginationButton(false);
+        }
+    }
+
+    inithialCards = (newsCardsArray) => {
+        this.toggleNewsSection(true);
+        this._setNewCardArray(newsCardsArray);
+        this._pagination();
     }
 
     _render = (cards) => {
         let cardsMarkup = '';
         cards.forEach(card => {
             if (card) {
-                cardsMarup += card.outerHTML
+                cardsMarkup += card.outerHTML
             };
         })
-        this._newsCardsSection.insertAdjacentHTML('beforeend', cardsMarkup);
+        this._newsCardsContainer.insertAdjacentHTML("beforeend", cardsMarkup);
     }
 
-    clear = () => {
-
-        this._newsCardsSection.innerHTML = '';
+    clearCard() {
+        this._newsCardsContainer.innerHTML = '';
     }
 
-    toggleNewsCardsHub = (state) => {
-        state ?
-        this._newsCardsHub.classList.add('.news_active')
-        this._newsCardsHub.classList.remove('.news_active')
-    }
-
-    _pagination = () => {
-        let cardsToRender = [];
-        for (let i = 0, i < 3; i++) {
-            cardsToRender.push(this._fullNewsCards.pop())
-        }
-        this._render(cardsToRender);
-        if (this._fullNewsCards.length === 0) {
-            this._paginationButton(false)
-        }
-    }
-
-    togglePagination = (state) => {
-        state ?
-        this._paginationButton.classList.add('button_hidden')
-        this._paginationButton.classList.remove('button_hidden')
-    }
-
-    _setCardsArray = (cardsArray) => {
-
-        this._fullNewsCards = cardsArray;
-    }
-
-    getCardsArray = () => {
-        return this._fullNewsCards;
-    }
-
-    renderInit = (newsCardsArray) => {
-        this.toggleNewsCardsHub(true);
-        this._setCardsArray(newsCardsArray);
-        this._pagination();
-    }
-
-    _setHandlers = () = {
+    _setHandlers = () => {
         this._paginationButton.addEventListener('click', this._pagination);
     }
-}
 
-export default NewsCardList
+    togglePaginationButton = (state) => {
+        if (state) {
+            this._paginationButton.classList.add('button_more')
+        } else {
+            this._paginationButton.classList.remove('button_more');
+        }
+    }
+
+}
+export default NewsCardList;

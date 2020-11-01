@@ -2,14 +2,14 @@ class CommitCard {
 
     constructor(cardItem, commitData, createDate) {
         this._commitData = commitData;
-        this._createDate = createDate;       
+        this._createDate = createDate;
         this._card = cardItem;
         this._link = cardItem.querySelector('.slider-card');
         this._date = cardItem.querySelector('.slider-card__date');
         this._avatar = cardItem.querySelector('.slider-card__avatar');
         this._name = cardItem.querySelector('.slider-card__name');
-        this._email = cardItem.querySelector('.slider-card__email');       
-        this._notion = cardItem.querySelector('.slider-card__paragraph');        
+        this._email = cardItem.querySelector('.slider-card__email');
+        this._notion = cardItem.querySelector('.slider-card__paragraph');
     }
 
     getCreate = () => {
@@ -25,4 +25,4 @@ class CommitCard {
 
 }
 
-export default CommitCard
+export default CommitCard;

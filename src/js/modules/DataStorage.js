@@ -1,43 +1,43 @@
-  class DataStorage {
-  constructor() {
+class DataStorage {
+    constructor() {}
 
-  }
+    setNewsData = (data) => {
+        localStorage.setItem('news', JSON.stringify(data));
+    }
 
-  setDataNews = (data) => {
-    localStorage.setItem('news', JSON.stringify(data));
-  }
+    setUserInput = (userInput) => {
+        localStorage.setItem('searchWord', JSON.stringify(userInput));
+    }
 
-  setSearchWord = (word) => {
-    localStorage.setItem('searchWord', JSON.stringify(word));
-  }
+    setTotalResults = (totalResults) => {
+        localStorage.setItem('totalResults', JSON.stringify(totalResults));
+    }
 
-  setTotalResults = (totalResults) => {
-    localStorage.setItem('totalResults', JSON.stringify(totalResults));
-  }
+    setCurrentDate = (date) => {
+        localStorage.setItem('dateString', JSON.stringify(date));
+    }
 
-  setCurrentDate = (date) => {
-    localStorage.setItem('currentDate', JSON.stringify(date));
-  }
+    getNewsData = () => {
+        return JSON.parse(localStorage.getItem('news'));
+    }
 
-  pullDataNews = () => {
-    return JSON.parse(localStorage.getItem('news'));
-  }
+    getUserInput = () => {
+        return JSON.parse(localStorage.getItem('searchWord'));
+    }
 
-  pullSearchWord = () => {
-    return JSON.parse(localStorage.getItem('searchWord'));
-  }
+    getTotalResults = () => {
+        return JSON.parse(localStorage.getItem('totalResults'));
+    }
 
-  pullTotalResults = () => {
-    return JSON.parse(localStorage.getItem('totalResults'));
-  }
+    getCurrentDate = () => {
+        return JSON.parse(localStorage.getItem('dateString'));
+    }
 
-  pullCurrentDate = () => {
-    return JSON.parse(localStorage.getItem('currentDate'));
-  }
+    clearStorage = () => {
+        localStorage.clear();
+    }
 
-  clear = () => {
-    localStorage.clear();
-  }
+
 }
 
 export default DataStorage;

@@ -1,3 +1,5 @@
+@import url('./_not-valid/search-form__input_not-valid.css');
+
 .search-form__input {
     display: flex;
     flex-grow: 1;

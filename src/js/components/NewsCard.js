@@ -1,29 +1,29 @@
 class NewsCard {
-
-    constructor(item, createNewsDate, newsData) {
-        this._item = item;
-        this._link = item.querySelector('.news-card');
-        this._photo = item.querySelector('.news-card__photo');
-        this._date = item.querySelector('.news-card__date');
-        this._title = item.querySelector('.news-card__title');
-        this._text = item.querySelector('.news-card__paragraph');
-        this._target = item.querySelector('.news-card__link');
-        this._createNewsDate = createNewsDate;
-        this._newsData = newsData;
+    constructor(card, data, getActualDate) {
+        this._card = card;
+        this._data = data;
+        this._getActualDate = getActualDate;
+        this._link = card.querySelector('.news-card');
+        this._avatar = card.querySelector('.news-card__photo');
+        this._date = card.querySelector('.news-card__date');
+        this._heading = card.querySelector('.news-card__title');
+        this._text = card.querySelector('.news-card__paragraph');
+        this._label = card.querySelector('.news-card__link');
     }
 
-    getCreate = () => {
-        if (this._newsData.urlToImage) {
-            this._photo.src = this._newsData.urlToImage;
-        }
-        this._date.textContent = this._createNewsDate(this._newsData.publishedAt);
-        this._link.href = this._newsData.url;
-        this._title.textContent = this._newsData.title.str;
-        this._text.textContent = this._newsData.description;
-        this._target.textContent = this._newsData.source.name;
+    getCreate() {
 
-        return this._item
+        if (this._data.urlToImage) {
+            this._avatar.src = this._data.urlToImage;
+        }
+        this._avatar.alt = this._data.title;
+        this._heading.textContent = this._data.titlestr;
+        this._text.textContent = this._data.description;
+        this._label.textContent = this._data.source.name;
+        this._date.textContent = this._getActualDate(this._data.publishedAt);
+        this._link.href = this._data.url;
+        return this._card;
     }
 }
 
-export default NewsCard
+export default NewsCard;

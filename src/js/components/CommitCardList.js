@@ -1,4 +1,4 @@
-export default class CommitCardList {
+class CommitCardList {
 
     constructor(container) {
         this._container = container;
@@ -13,3 +13,5 @@ export default class CommitCardList {
         this._container.insertAdjacentHTML("afterbegin", cardsMarkup);
     }
 }
+
+export default CommitCardList;

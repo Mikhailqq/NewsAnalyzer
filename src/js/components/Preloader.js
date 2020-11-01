@@ -1,27 +1,33 @@
 class Preloader {
-  constructor(container, preloaderSearch, notFoundSection) {
-  	this._container = container;
-    this._preloaderSearch = preloaderSearch;
-    this._notFoundSection = notFoundSection;
-  }
+    constructor(container, loader, notFound) {
+        this._container = container;
+        this._loader = loader;
+        this._notFound = notFound;
+    }
 
     togglePreloader = (state) => {
-    state ?
-      this._container.classList.add('preloader__container_active') :
-      this._container.classList.remove('preloader__container_active');
-  }
+        if (state) {
+            this._container.classList.add('preloader_visible');
+        } else {
+            this._container.classList.remove('preloader_visible');
+        }
+    }
 
-  togglePreloaderSearch = (state) => {
-    state ?
-      this._preloaderSearch.classList.add('preloader__container_active') :
-      this._preloaderSearch.classList.remove('preloader__container_active');
-  }
+    toggleLoader = (state) => {
+        if (state) {
+            this._loader.classList.add('preloader__container_visible');
+        } else {
+            this._loader.classList.remove('preloader__container_visible');
+        }
+    }
 
-  toggleNotFoundSection = (state) => {
-    state ?
-      this._notFoundSection.classList.add('preloader__container_active') :
-      this._notFoundSection.classList.remove('preloader__container_active');
-  }
+    toggleNotFound = (state) => {
+        if (state) {
+            this._notFound.classList.add('preloader__container_visible');
+        } else {
+            this._notFound.classList.remove('preloader__container_visible');
+        }
+    }
 
 }
 

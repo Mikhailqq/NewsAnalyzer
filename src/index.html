@@ -25,27 +25,34 @@
             <div class="search__container">
                 <h1 class="search__title">Что в мире творится?</h1>
                 <p class="search__subtitle">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.</p>
-                <form class="search-form" name="search">
-                    <input type="text" class="search-form__input" placeholder="Введите тему новости" required="" minlength="2" maxlength="50" novalidate>
+                <form class="search-form" name="search" novalidate>
+                    <input name="input" type="text" class="search-form__input" placeholder="Введите тему новости" required minlength="2" maxlength="50" >
                     <span class='search-form__error'></span>
-                    <button class="button button_section_search-form" disabled>Искать</button>
+                    <button class="button button_section_search-form" type="submit" disabled>Искать</button>
                 </form>
             </div>
         </section>
     </div>
+
+
     <section class="preloader page__section">
+
         <div class="preloader__container">
             <div class="preloader__ellips">
                 <i class='preloader__circle'></i>
             </div>
             <p class="preloader__paragraph">Идет поиск новостей...</p>
         </div>
+
         <div class="preloader__container">
             <span class="preloader__not-found"></span>
             <h2 class="preloader__title">Ничего не найдено</h2>
             <p class="preloader__paragraph">К сожалению по вашему запросу ничего не найдено.</p>
         </div>
+
+
     </section>
+
     <section class="news page__section">
         <div class="news__container">
             <h2 class="news__title">Результаты поиска</h2>
@@ -53,11 +60,13 @@
         </div>
         <ul class="news__cards">
             <template id="card-template" style="display: none;">
-                <li>
+                <li class="news__item">
                     <a href="" class="news-card" target="_blank">
-                        <img src="" class="news-card__photo" alt="Фото">
+                        <div class="news-card__photo-container">
+                            <img src="" class="news-card__photo" alt="Фото">
+                        </div>
                         <article class="news-card__content">
-                            <div class="news-card__date"></div>
+                            <time datetime="" class="news-card__date"></time>
                             <h3 class="news-card__title"></h3>
                             <p class="news-card__paragraph"></p>
                             <div class="news-card__link"></div>
@@ -66,7 +75,7 @@
                 </li>
             </template>
         </ul>
-        <button class='button button_section_news'>Показать еще</button>
+        <button class='button button_section_news button_more'>Показать еще</button>
     </section>
     <section class="about-author page__section">
         <div class="about-author__avatar-container">
