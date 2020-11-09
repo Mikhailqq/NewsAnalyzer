@@ -1,6 +1,7 @@
-import {MONTH_ARRAY} from '../constants/MONTH_ARRAY.js';
-
-	export const getActualDate = (data) => {
-  const date = new Date(data);
-  return `${date.getDate()} ${MONTH_ARRAY[date.getMonth()]}, ${date.getFullYear()}`
+export const getActualDate = () => {
+    const date = new Date();
+    const year = date.getFullYear();
+    const month = ((date.getMonth() + 1 + '').length === 1) ? '0' + ((date.getMonth() + 1)) : (date.getMonth() + 1);
+    const day = date.getDate().length === 1 ? '0' + date.getDate() : date.getDate();
+    return `${year}-${month}-${day}`
 }

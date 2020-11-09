@@ -5,8 +5,8 @@ class NewsApi {
       this._pageSize = options.pageSize;
     }
 
-    getNews = (userInput, dateString, lastWeekDate) => {
-      return fetch (`${this._apiUrl}?q=${userInput}&to=${dateString}&from=${lastWeekDate}&pageSize=${this._pageSize}&apiKey=${this._apiKey}`, {
+    getNews = (userInput, currentDate, lastWeekDate) => {
+      return fetch (`${this._apiUrl}?q=${userInput}&to=${currentDate}&from=${lastWeekDate}&pageSize=${this._pageSize}&apiKey=${this._apiKey}`, {
           method: 'GET',
       })
         .then((res) => {

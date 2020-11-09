@@ -6,11 +6,21 @@ import NewsCard from './js/components/NewsCard.js';
 import NewsCardList from './js/components/NewsCardList.js';
 import Preloader from './js/components/Preloader.js';
 import SearchInput from './js/components/SearchInput.js';
-import { NEWS_API_CONFIG } from './js/constants/NEWS_API_CONFIG.js';
-import { LAST_WEEK } from './js/constants/LAST_WEEK.js';
-import { getActualDate } from './js/utils/getActualDate.js';
-import { createLastWeekDate } from './js/utils/createLastWeekDate.js';
-import { createNewsCardsArray } from './js/utils/createNewsCardsArray.js'
+import {
+    NEWS_API_CONFIG
+} from './js/constants/NEWS_API_CONFIG.js';
+import {
+    LAST_WEEK
+} from './js/constants/LAST_WEEK.js';
+import {
+    getActualDate
+} from './js/utils/getActualDate.js';
+import {
+    createLastWeekDate
+} from './js/utils/createLastWeekDate.js';
+import {
+    createNewsCardsArray
+} from './js/utils/createNewsCardsArray.js'
 
 //  DOM
 const newsSection = document.querySelector('.news');
@@ -73,13 +83,13 @@ function findUserInput(userInput) {
 
 const storageCardsArray = dataStorage.getNewsData();
 if (storageCardsArray) {
-  const newsCardsArray = createNewsCardsArray(
-    storageCardsArray,
-    cardTemplate,
-    NewsCard,
-    getActualDate
-  );
-  search.putContent(dataStorage.getUserInput());
-  search.handlerInputForm();
-  newsCardList.inithialCards(newsCardsArray);
+    const newsCardsArray = createNewsCardsArray(
+        storageCardsArray,
+        cardTemplate,
+        NewsCard,
+        getActualDate
+    );
+    search.putContent(dataStorage.getUserInput());
+    search.handlerInputForm();
+    newsCardList.inithialCards(newsCardsArray);
 }

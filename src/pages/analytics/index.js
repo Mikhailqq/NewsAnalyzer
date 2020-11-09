@@ -2,8 +2,12 @@ import './analytics.css';
 
 import DataStorage from '../../js/modules/DataStorage.js';
 import Statistics from '../../js/components/Statistics';
-import { createAnaliticsDate } from '../../js/utils/createAnaliticsDate.js';
-import { createMonth } from '../../js/utils/createMonth.js';
+import {
+    createAnaliticsDate
+} from '../../js/utils/createAnaliticsDate.js';
+import {
+    createMonth
+} from '../../js/utils/createMonth.js';
 
 // DOM
 const keywordTitle = document.querySelector('.keyword__title');
@@ -18,13 +22,13 @@ const diagrammaTemplate = document.querySelector('#diagram-template').content.qu
 const digitContainerTop = document.querySelector('.analytics__digits_section_top');
 const digitContainerBottom = document.querySelector('.analytics__digits_section_bottom');
 
-const analyticTemplate = document.querySelector('#analytics__digit').content.querySelector('span');
+const analyticTemplate = document.querySelector('#analytics-digit').content.querySelector('span');
 const analyticTitle = document.querySelector('.analytics__shedule');
 
 // INSTANCE
-const dataStorage = new DataStorage();
+const dataStore = new DataStorage();
 const statistics = new Statistics({
-    dataStorage,
+    dataStore,
     keywordTitle,
     totalNumber,
     referenceNumber,

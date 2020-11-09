@@ -14,7 +14,7 @@ class DataStorage {
     }
 
     setCurrentDate = (date) => {
-        localStorage.setItem('dateString', JSON.stringify(date));
+        localStorage.setItem('currentDate', JSON.stringify(date));
     }
 
     getNewsData = () => {
@@ -30,7 +30,7 @@ class DataStorage {
     }
 
     getCurrentDate = () => {
-        return JSON.parse(localStorage.getItem('dateString'));
+        return JSON.parse(localStorage.getItem('currentDate'));
     }
 
     clearStorage = () => {
