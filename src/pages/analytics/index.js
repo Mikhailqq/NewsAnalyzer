@@ -19,7 +19,7 @@ const digitContainerTop = document.querySelector('.analytics__digits_section_top
 const digitContainerBottom = document.querySelector('.analytics__digits_section_bottom');
 
 const analyticTemplate = document.querySelector('#analytics__digit').content.querySelector('span');
-const analyticTitle = document.querySelector('.analytics__schedule');
+const analyticTitle = document.querySelector('.analytics__shedule');
 
 // INSTANCE
 const dataStorage = new DataStorage();

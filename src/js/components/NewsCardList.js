@@ -26,7 +26,7 @@ class NewsCardList {
         }
         this._render(addNewCards);
         if (this._newCardNews.length === 0) {
-            this._togglePaginationButton(false);
+            this.togglePaginationButton(false);
         }
     }
 
