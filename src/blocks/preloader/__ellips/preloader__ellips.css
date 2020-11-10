@@ -1,7 +1,19 @@
 .preloader__ellips {
-    background-image: url('../../../images/Ellipse-min.png');
+    /*background-image: url('../../../images/Ellipse-min.png');
     width: 74px;
     height: 74px;
-    margin: auto;
+    margin: auto;*/
+    margin-bottom: 21px;
+}
 
+@media screen and (max-width: 1024px) {
+  .preloader__ellips {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .preloader__ellips {
+    margin-bottom: 10px;
+  }
 }

@@ -11,4 +11,6 @@
     position: relative;
     background: #f5f6f7;
     font-family: Roboto, Roboto Slab, Inter, sans-serif;
+    padding-left: 0;
+    padding-right: 0;
 }

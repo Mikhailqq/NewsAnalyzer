@@ -17,18 +17,11 @@
     }
 }
 
-@media screen and (min-width: 485px) and (max-width: 710px) {
-    .commits__title {
-        max-width: 100%;
-        padding-left: 0;
-    }
-}
 
 @media screen and (max-width: 485px) {
     .commits__title {
         padding-left: 16px;
-        padding-right: 16px;
-        max-width: 60%;
+        padding-right: 16px;        
         line-height: 40px;
     }
 }

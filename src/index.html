@@ -13,11 +13,11 @@
 </head>
 
 <body class="page">
-     <div class="wrapper">
+    <div class="wrapper">
         <header class="header header_theme_white page__section">
             <div class="header__logo">NewsAnalyzer</div>
             <nav class="menu">
-                <a href="#" class="menu__item menu__item_active">Главная</a>                
+                <a href="#" class="menu__item menu__item_active">Главная</a>
                 <a href="./about.html" class="menu__item">О проекте</a>
             </nav>
         </header>
@@ -25,108 +25,61 @@
             <div class="search__container">
                 <h1 class="search__title">Что в мире творится?</h1>
                 <p class="search__subtitle">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.</p>
-                <form class="search-form">
-                    <input type="text" class="search-form__input" placeholder="Введите тему новости" required="">
-                    <button class="button button_section_search-form">Искать</button>
+                <form class="search-form" name="search" novalidate>
+                    <input name="input" type="text" class="search-form__input" placeholder="Введите тему новости" required minlength="2" maxlength="50" >
+                    <span class='search-form__error'></span>
+                    <button class="button button_section_search-form" type="submit" disabled>Искать</button>
                 </form>
             </div>
         </section>
     </div>
+
+
     <section class="preloader page__section">
-        <div class="preloader__container preloader__container_active">
-            <span class="preloader__ellips"></span>
+
+        <div class="preloader__container">
+            <div class="preloader__ellips">
+                <i class='preloader__circle'></i>
+            </div>
             <p class="preloader__paragraph">Идет поиск новостей...</p>
         </div>
-        <div class="preloader__container preloader__container_active">
+
+        <div class="preloader__container">
             <span class="preloader__not-found"></span>
             <h2 class="preloader__title">Ничего не найдено</h2>
             <p class="preloader__paragraph">К сожалению по вашему запросу ничего не найдено.</p>
         </div>
+
+
     </section>
+
     <section class="news page__section">
         <div class="news__container">
             <h2 class="news__title">Результаты поиска</h2>
-            
             <a class="link" href="./analytics.html">Посмотреть аналитику &gt;</a>
         </div>
         <ul class="news__cards">
-            <li>
-                <a href="https://lenta.ru/" class="news-card" target="_blank">
-                    <img src="<%=require('./images/national park-min.jpg').default%>" class="news-card__photo" alt="Фото">
-                    <article class="news-card__content">
-                        <div class="news-card__date">2 августа, 2019</div>
-                        <h3 class="news-card__title">Национальное достояние – парки</h3>
-                        <p class="news-card__paragraph">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.
-                        </p>
-                        <div class="news-card__link">Лента.ру</div>
-                    </article>
-                </a>
-            </li>
-            <li>
-                <a href="https://meduza.io/" class="news-card" target="_blank">
-                    <img src="<%=require('./images/national park-min.jpg').default%>" class="news-card__photo" alt="Фото">
-                    <article class="news-card__content">
-                        <div class="news-card__date">2 августа, 2019</div>
-                        <h3 class="news-card__title">Лесные огоньки: история одной фотографии</h3>
-                        <p class="news-card__paragraph">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного из местных чудес природы.</p>
-                        <div class="news-card__link">Медуза</div>
-                    </article>
-                </a>
-            </li>
-            <li>
-                <a href="https://ria.ru/" class="news-card" target="_blank">
-                    <img src="<%=require('./images/national park-min.jpg').default%>" class="news-card__photo" alt="Фото">
-                    <article class="news-card__content">
-                        <div class="news-card__date">2 августа, 2019</div>
-                        <h3 class="news-card__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
-                        <p class="news-card__paragraph">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...
-                        </p>
-                        <div class="news-card__link">Риа</div>
-                    </article>
-                </a>
-            </li>
-            <li>
-                <a href="https://zen.yandex.ru/" class="news-card" target="_blank">
-                    <img src="<%=require('./images/national park-min.jpg').default%>" class="news-card__photo" alt="Фото">
-                    <article class="news-card__content">
-                        <div class="news-card__date">2 августа, 2019</div>
-                        <h3 class="news-card__title">Национальное достояние – парки</h3>
-                        <p class="news-card__paragraph">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.
-                        </p>
-                        <div class="news-card__link">Дзен</div>
-                    </article>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.afisha.ru/" class="news-card" target="_blank">
-                    <img src="<%=require('./images/national park-min.jpg').default%>" class="news-card__photo" alt="Фото">
-                    <article class="news-card__content">
-                        <div class="news-card__date">2 августа, 2019</div>
-                        <h3 class="news-card__title">Лесные огоньки: история одной фотографии</h3>
-                        <p class="news-card__paragraph">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного из местных чудес природы.
-                        </p>
-                        <div class="news-card__link">Афиша</div>
-                    </article>
-                </a>
-            </li>
-            <li>
-                <a href="https://zona.media/" class="news-card" target="_blank">
-                    <img src="<%=require('./images/national park-min.jpg').default%>" class="news-card__photo" alt="Фото">
-                    <article class="news-card__content">
-                        <div class="news-card__date">2 августа, 2019</div>
-                        <h3 class="news-card__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
-                        <p class="news-card__paragraph">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...
-                        </p>
-                        <div class="news-card__link">Медиазона</div>
-                    </article>
-                </a>
-            </li>
+            <template id="card-template" style="display: none;">
+                <li class="news__item">
+                    <a href="" class="news-card" target="_blank">
+                        <div class="news-card__photo-container">
+                            <img src="" class="news-card__photo" alt="">
+                        </div>
+                        <article class="news-card__content">
+                            <time datetime="" class="news-card__date"></time>
+                            <h3 class="news-card__title"></h3>
+                            <p class="news-card__paragraph"></p>
+                            <div class="news-card__link"></div>
+                        </article>
+                    </a>
+                </li>
+            </template>
         </ul>
-        <button class='button button_section_news'>Показать еще</button>
+        <button class='button button_section_news button_more'>Показать еще</button>
     </section>
     <section class="about-author page__section">
         <div class="about-author__avatar-container">
-            <img src="<%=require('./images/avatar-min.jpg').default%>" class="about-author__avatar" alt="Фото">
+            <img src="<%=require('./images/avatar-min.jpg').default%>" class="about-author__avatar" alt="Фото автора проекта">
         </div>
         <article class="about-author__information">
             <h2 class="about-author__title">Об авторе</h2>
