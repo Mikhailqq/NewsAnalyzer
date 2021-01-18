@@ -22,7 +22,8 @@
 }
 
 .news-card:hover {
-    box-shadow: 4px 4px 8px 0px rgba(212, 212, 212, 0.66);
+ transform: translateY(-10px);
+ box-shadow: 4px 4px 8px 0px rgba(212, 212, 212, 0.66);
 }
 
 @media screen and (max-width: 485px) {
