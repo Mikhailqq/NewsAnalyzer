@@ -45,6 +45,10 @@ const newsCardList = new NewsCardList(newsSection, newsCardsContainer, paginatio
 const search = new SearchInput(searchForm, findUserInput);
 
 // FUNCTION
+if (dateString !== dataStorage.getCurrentDate()) {
+  dataStorage.clearStorage()
+}
+
 function findUserInput(userInput) {
     newsCardList.clearCard();
     newsCardList.toggleNewsSection(false);
@@ -80,6 +84,10 @@ function findUserInput(userInput) {
             console.log(err);
         })
 }
+
+
+
+
 
 const storageCardsArray = dataStorage.getNewsData();
 if (storageCardsArray) {
